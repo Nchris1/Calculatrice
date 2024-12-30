@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" >
+    <title>Calculatrice</title>
+</head>
+<body>
+    <table class="calculator table">
+        <caption> Calculator</caption>
+<thead>			
+    <tr>
+        <td colspan=7>
+            <div class="output form-group">
+                <input type="text" class="ans form-control" readonly name="">
+            </div>				
+        </td>
+    </tr>
+</thead>
+<tbody class="actions" >		
+    <tr>
+        <td>
+            <button class="btn btn-op" data-value='1/x'>⅟x</button>				
+
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='|x|'>|x|</button>				
+
+        </td>
+        <td>
+            <button class="btn btn-op" onclick="secondFunction()"> 2nde </button>				
+
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='('>(</button> <!-- Ajoute une nouvelle expression entre parenthèse qui sera multiplier avec l'ancienne -->	
+
+        </td>
+        <td>
+            <button class="btn btn-op" data-value=')'>)</button>				
+
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='%'>MOD</button>			
+
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='ce'>CE</button>	
+    </tr>
+
+    <tr colspan=3>
+        <td>
+            <button class="btn btn-op" data-value='10x'>10ⁿ</button>				
+
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='!'>n!</button>	
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            <button class="btn btn-op" data-value='inv'>Inv</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" id="sine" data-value='sin'>sin</button>			
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='ln'>ln</button>				
+        </td>
+        <td>
+            <button class="btn" data-value='7'>7</button>
+        </td>
+        <td>
+            <button class="btn" data-value='8'>8</button>				
+        </td>
+        <td>
+            <button class="btn" data-value='9'>9</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='/'>÷</button>				
+
+        </td>
+    </tr>			
+    <tr>
+        <td>
+            <button class="btn btn-op" data-value='3.14'>π</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" id="cosine" data-value='cos'>cos</button>			
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='log'>log2</button>				
+        </td>
+        <td>
+            <button class="btn" data-value='4'>4</button>
+        </td>
+        <td>
+            <button class="btn" data-value='5'>5</button>				
+        </td>
+        <td>
+            <button class="btn" data-value='6'>6</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='*'>×</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button class="btn btn-op" data-value='e'>e</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" id="tane" data-value='tan'>tan</button>			
+        </td>
+        <td>
+            <button class="btn btn-op" id="sqrt" data-value='root'>√x</button>				
+        </td>
+        <td>
+            <button class="btn" data-value='3'>3</button>
+        </td>
+        <td>
+            <button class="btn" data-value='2'>2</button>				
+        </td>
+        <td>
+            <button class="btn" data-value='1'>1</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='-'>-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="btn btn-op" data-value='exp'>EXP</button>			
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='x^2'>x²</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='**'>xⁿ</button>		
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='.'>.</button>
+        </td>
+        <td>
+            <button class="btn" data-value='0'>0</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='='>=</button>				
+        </td>
+        <td>
+            <button class="btn btn-op" data-value='+'>+</button>
+        </td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan=7>
+            <div class="output form-group">
+                <h3> Historic </h3>
+                <textarea class="his form-control" readonly></textarea>
+            </div>				
+        </td>
+    </tr>
+</tfoot>
+</table>
+
+<script src="Calculator.js"></script>
+</body>
+</html>

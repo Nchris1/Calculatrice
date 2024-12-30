@@ -1,0 +1,39 @@
+.calculator{
+	border:2px solid #ddd;
+	width: 800px;
+	box-sizing: border-box;
+	margin: 40px auto 0;
+	font-family: verdana;
+    text-align: center;
+}
+.calculator caption{
+    font-size:xx-large;
+}
+.calculator .form-control{
+	height: 60px;
+}
+.calculator .ans{
+    width: 95%;
+}
+.calculator .his{
+    width: 95%;
+    min-height: 200px;
+    font-size:large;
+    overflow-y: auto;
+    resize: none;
+}
+.calculator .form-group{
+	margin-bottom: 0;
+}
+.calculator input[type=text]{
+	font-size: 1.5rem;
+	color:#333;
+}
+.calculator .btn {
+	font-size: 1.5rem;
+	color:#333;
+	width: 80px;
+}
+.calculator .btn-op {
+	background-color: #999999;
+}
